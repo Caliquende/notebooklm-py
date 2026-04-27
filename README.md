@@ -15,6 +15,10 @@
 
 **Source & Development**: <https://github.com/teng-lin/notebooklm-py>
 
+> **Fork note**
+>
+> This fork is hosted under `Caliquende/notebooklm-py`. The upstream project remains `teng-lin/notebooklm-py`; keep this fork synchronized before publishing package or documentation changes.
+
 > **⚠️ Unofficial Library - Use at Your Own Risk**
 >
 > This library uses **undocumented Google APIs** that can change without notice.
@@ -95,6 +99,13 @@ pip install "notebooklm-py[browser]"
 playwright install chromium
 ```
 
+For local source checkout workflows, the root `requirements.txt` mirrors the runtime dependencies declared in `pyproject.toml`:
+
+```bash
+pip install -r requirements.txt
+pip install -e .
+```
+
 If `playwright install chromium` fails with `TypeError: onExit is not a function`, see the Linux workaround in [Troubleshooting](docs/troubleshooting.md#linux).
 
 ### Development Installation
@@ -103,6 +114,7 @@ For contributors or testing unreleased features:
 
 ```bash
 pip install git+https://github.com/teng-lin/notebooklm-py@main
+pip install -e ".[browser,dev]"
 ```
 
 ⚠️ The main branch may contain unstable changes. Use PyPI releases for production.
