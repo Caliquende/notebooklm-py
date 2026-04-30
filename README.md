@@ -247,7 +247,7 @@ Fetches the canonical [SKILL.md](SKILL.md) directly from GitHub.
 - **[RPC Development](docs/rpc-development.md)** - Protocol capture and debugging
 - **[RPC Reference](docs/rpc-reference.md)** - Payload structures
 - **[Changelog](CHANGELOG.md)** - Version history and release notes
-- **[Security](SECURITY.md)** - Security policy and credential handling
+- **[Security](SECURITY.md)** - Security policy, credential handling, and CI/CD protection
 
 ## Platform Support
 
